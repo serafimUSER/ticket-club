@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Вход</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h2 class="label__form">
+                Вход
+            </h2>
+            <form method="get">
+                <div class="inp__block">
+                    <i class='bx bx-envelope' ></i>
+                    <input type="email" name="email" class="inp__form" placeholder="Почта">
+                </div>
+                <div class="inp__block">
+                    <i class='bx bx-lock' ></i>
+                    <input type="password" name="password" class="inp__form" placeholder="Пароль">
+                </div>
+                <div class="form__remeber_me">
+                    <div class="remeber__form">
+                        <label for="remeber" id="btn">
+                            <button type="button" id="btn" class="checkbox">
+                                <i class='bx bx-check' id="i_check"></i>
+                            </button>
+                            <span class="span__form">Запомнить меня</span>
+                            <input type="checkbox" id="remeber" name="remeber">
+                        </label>
+                    </div>
+                    <div class="forget__form">
+                        <a href="#">
+                            Забыли пароль
+                        </a>
+                    </div>
+                </div>
+                <div class="btn__form">
+                    <button type="submit">
+                        Войти
+                    </button>
+                </div>
+                <div class="no_account__form">
+                    <a href="#">
+                        У меня нет аккаунта. Регистрация
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

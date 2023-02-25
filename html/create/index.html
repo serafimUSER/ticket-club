@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/create__step_1.css">
+    <title>Главная страница</title>
+</head>
+<body>
+    <div class="list_windows no_aktivate" id="list">
+        <a href="#">
+            <li>
+                <span>Настройки</span>
+                <i class='bx bx-cog' ></i>
+            </li>
+        </a>
+        <a href="#">
+            <li>
+                <span>Выйти</span>
+                <i class='bx bx-log-out-circle' ></i>
+            </li>
+        </a>
+    </div>
+    <div class="divide">
+        <div class="menu">
+            <div class="dot">
+                <div class="logo">
+                    <span>Tick-club</span>
+                </div>
+                <div class="navigation">
+                    <a href="#">
+                        <button class="btn-nav">
+                            <i class='bx bx-home'></i>
+                            <span>Главная</span>
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button class="btn-nav">
+                            <i class='bx bx-planet' ></i>
+                            <span>Комьюнити</span>
+                        </button>
+                    </a>
+                    <div class="hr"></div>
+                    <a href="#">
+                        <button class="btn-nav">
+                            <i class='bx bx-edit' ></i>
+                            <span>Подписка</span>
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button class="btn-nav">
+                            <i class='bx bx-help-circle' ></i>
+                            <span>Помощь & FAQ</span>
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button class="btn-nav">
+                            <i class='bx bx-planet' ></i>
+                            <span>Комюнити</span>
+                        </button>
+                    </a>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <div class="avatar">
+                            <i class='bx bxs-face-mask'></i>
+                        </div>
+                        <div class="name">
+                            <p class="name_user">
+                                serafim
+                            </p>
+                            <p class="id">
+                                #1412
+                            </p>
+                        </div>
+                    </div>
+                    <div class="setup">
+                        <button class="setup-btn">
+                            <i class='bx bx-dots-horizontal-rounded' ></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="steps">
+                <div class="step step_aktive">
+                </div>
+                <div class="step">
+                </div>
+                <div class="step">
+                </div>
+            </div>
+            <div class="container">
+                <div class="ticket" id="ticket">
+                    <button class="full_screen" id="normal_screen">
+                        <i class='bx bx-exit-fullscreen' ></i>
+                    </button>
+                    <button class="full_screen" id="full_screen">
+                        <i class='bx bx-fullscreen' ></i>
+                    </button>
+                    <div class="ticket_content">
+                    </div>
+                </div>
+                <div class="setup_ticket">
+                    <form method="get">
+                        <div class="label__form">
+                            <div class="inp__form__ticket">
+                                <i class='bx bx-paperclip' ></i>
+                                <input type="text" name="addr" placeholder="Адрес">
+                            </div>
+                            <div class="inp__form__ticket">
+                                <i class='bx bxs-map' ></i>
+                                <input type="text" name="link" placeholder="Ссылка на google maps">
+                            </div>
+                        </div>
+                        <div class="label__form">
+                            <div class="inp__form__ticket">
+                                <i class='bx bx-link-alt'></i>
+                                <input type="text" name="title" placeholder="Заголовок">
+                            </div>
+                            <div class="textarea__form__ticket">
+                                <textarea placeholder="Описание" name="description"></textarea>
+                            </div>
+                        </div>
+                        <div class="label__form">
+                            <div class="inp__form__ticket">
+                                <i class='bx bx-wallet' ></i>
+                                <input type="text" name="cost" placeholder="Цена">
+                            </div>
+                            <div class="inp__form__ticket">
+                                <i class='bx bx-time-five' ></i>
+                                <input type="text" name="time" placeholder="Время (00:00 - 00:00)">
+                            </div>
+                            <div class="inp__form__ticket">
+                                <i class='bx bx-calendar' ></i>
+                                <input type="text" name="date" placeholder="Дата (0.0.0)">
+                            </div>
+                        </div>
+                        <div class="label_form__btns">
+                            <button class="reset" type="button">Сбросить</button>
+                            <button class="further" type="submit">Далее</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/create_ticket.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
